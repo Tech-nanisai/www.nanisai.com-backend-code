@@ -8,7 +8,7 @@ dotenv.config();
 const router = express.Router();
 
 // Client Registration API
-router.post("/clintregister", async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         const { fullName, phoneNumber, email, password } = req.body;
 
