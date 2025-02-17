@@ -33,4 +33,4 @@ const UserSchema = new mongoose.Schema(
 );
 
 // Use "User" so the collection is created as "users" in MongoDB
-module.exports = mongoose.model("clint_registered_details", UserSchema);
+module.exports = mongoose.model("Clint_Registered_Details", UserSchema);
