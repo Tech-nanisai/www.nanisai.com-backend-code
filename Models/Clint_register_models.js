@@ -1,5 +1,6 @@
-import mongoose from "mongoose";
+//backend/Models/Clint_register_models.js
 
+import mongoose from "mongoose";
 // Define the user registration schema
 const UserRegisterSchema = new mongoose.Schema(
     {

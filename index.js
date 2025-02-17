@@ -1,9 +1,10 @@
+//backend/index.js
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
-import clintRegisterRoutes from "./Routes/Clint_register_routes.js"; // ✅ Add .js extension
+import ClintRegisterRoutes from "./Routes/Clint_register_routes.js"; // ✅ Add .js extension
 
 dotenv.config();
 const app = express();
@@ -19,7 +20,7 @@ mongoose
     .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
 // Routes
-app.use("/", clintRegisterRoutes);
+app.use("/api/clint", ClintRegisterRoutes);
 
 app.get("/", (req, res) => res.send("🚀 User Authentication API is running..."));
 
